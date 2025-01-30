@@ -23,27 +23,37 @@
   object-fit: contain; /* Prevents cropping */
 }
 
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .navbar .nav-links li {
-    text-transform: uppercase;
-    padding-left: 20px;
-  }
-  
-  .navbar .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .navbar .nav-links a:hover {
-    color: #f0a500;
-    background-color: aqua;
-  }
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Align links vertically */
+  height: 100%; /* Ensure nav-links fills navbar */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-links li {
+  text-transform: uppercase;
+  height: 100%; /* Make each list item take full height */
+  display: flex;
+  align-items: center; /* Align text inside list items */
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+  height: 100%; /* Fill the navbar height */
+  display: flex;
+  align-items: center;
+  padding: 0 15px; /* Adjust horizontal spacing */
+}
+
+.navbar .nav-links a:hover {
+  color: #292928;
+  background-color: rgb(241, 237, 243);
+}
   
   .burger {
     display: none;
