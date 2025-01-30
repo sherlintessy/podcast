@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
+import Home from './pages/home';
+import Episodes from './pages/episodes'; 
+import About from './pages/about';
 
-const Home = () => <div className="page">Welcome to the Podcast!</div>;
-const Episodes = () => <div className="page">Here are our episodes...</div>;
-const About = () => <div className="page">About the podcast...</div>;
 // const Subscribe = () => <div className="page">Subscribe to our podcast!</div>;
 
 const App = () => {

@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="/assets/logo.png" alt="Podcast Logo" />
+        <img src="/assets/podcast logo.jpg" alt="Podcast Logo" />
       </div>
       <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
         <li>
