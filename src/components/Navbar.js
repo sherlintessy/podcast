@@ -15,13 +15,13 @@ const Navbar = () => {
         <img src="/assets/podcast logo.jpg" alt="Podcast Logo" />
       </div>
       <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-        <li>
+        <li onClick={toggleMenu}>
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li onClick={toggleMenu}>
           <Link to="/episodes">Episodes</Link>
         </li>
-        <li>
+        <li onClick={toggleMenu}>
           <Link to="/about">About</Link>
         </li>
         {/* <li>
